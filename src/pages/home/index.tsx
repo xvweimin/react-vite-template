@@ -1,9 +1,11 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '@redux/hooks';
+import { decrement, increment } from './counterSlice';
 
 const Index = () => {
   const navigate = useNavigate();
-  const [count, setCount] = useState(0);
+  const count = useAppSelector((state) => state.counter.value);
+  const dispatch = useAppDispatch();
 
   return (
     <div className='App'>
@@ -15,11 +17,11 @@ const Index = () => {
       </div>
       <h1>Vite + React</h1>
       <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <button onClick={() => dispatch(decrement())}>-</button>
+        &nbsp; count is {count} &nbsp;
+        <button onClick={() => dispatch(increment())}>+</button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/pages/home.tsx</code> and save to test dispatch & HMR
         </p>
       </div>
       <button onClick={() => navigate('/about')}>go about</button>
