@@ -1,8 +1,17 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import reactLogo from '@assets/react.svg?url';
+import reactLogo from '@assets/react.svg';
+import { getUserInfo } from '@api';
 
 const Index = () => {
   const navigate = useNavigate();
+  const [data, setData] = useState('');
+
+  const handleRequest = async () => {
+    const userId = Math.round(Math.random() * 10);
+    const res = await getUserInfo(userId);
+    setData(JSON.stringify(res));
+  };
 
   return (
     <div className='App'>
@@ -13,6 +22,9 @@ const Index = () => {
         <p className='read-the-docs'>Click on the React logo to learn more</p>
       </div>
       <h1>Vite + React</h1>
+      <div className='card'>data is: {data}</div>
+      <button onClick={handleRequest}>request test</button>
+      &nbsp;
       <button onClick={() => navigate(-1)}>go back</button>
     </div>
   );

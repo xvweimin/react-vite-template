@@ -8,9 +8,11 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      '@api': path.resolve(__dirname, './src/api'),
       '@assets': path.resolve(__dirname, './src/assets'),
       '@pages': path.resolve(__dirname, './src/pages'),
       '@redux': path.resolve(__dirname, './src/redux'),
+      '@utils': path.resolve(__dirname, './src/utils'),
       '@src': path.resolve(__dirname, './src'),
     },
   },
