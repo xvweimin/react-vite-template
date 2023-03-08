@@ -1,7 +1,7 @@
 {
   "name": "react-vite-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -48,5 +48,9 @@
   },
   "engines": {
     "node": ">=14.18 || >=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xvweimin/react-vite-template.git"
   }
 }
