@@ -1,10 +1,14 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
-// https://vitejs.dev/config/
+import react from '@vitejs/plugin-react-swc';
+import { defineConfig } from 'vite';
+
+/**
+ * Vite 配置文件
+ * @link https://cn.vitejs.dev/config/
+ */
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -15,5 +19,9 @@ export default defineConfig({
       '@utils': path.resolve(__dirname, './src/utils'),
       '@src': path.resolve(__dirname, './src'),
     },
+  },
+  server: {
+    base: './',
+    host: '0.0.0.0',
   },
 });
