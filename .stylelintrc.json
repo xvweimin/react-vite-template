@@ -6,6 +6,7 @@
   "plugins": ["stylelint-prettier"],
   "rules": {
     "prettier/prettier": true,
+    "selector-class-pattern": null,
     "selector-pseudo-class-no-unknown": [
       true,
       {
