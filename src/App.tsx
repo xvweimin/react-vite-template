@@ -1,10 +1,12 @@
 import { Suspense, useEffect } from 'react';
+
 import {
   Route,
   Routes,
   useLocation,
   useNavigationType,
 } from 'react-router-dom';
+
 import routes from './routes/routes';
 
 function App() {

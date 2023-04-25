@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
+
 import { useAppDispatch, useAppSelector } from '@redux/hooks';
+
 import { decrement, increment } from './counterSlice';
 
 const Index = () => {

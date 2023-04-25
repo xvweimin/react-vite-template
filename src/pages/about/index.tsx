@@ -1,7 +1,9 @@
 import { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
-import reactLogo from '@assets/react.svg';
+
 import { getUserInfo } from '@api';
+import reactLogo from '@assets/react.svg';
 
 const Index = () => {
   const navigate = useNavigate();
