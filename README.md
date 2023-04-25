@@ -62,6 +62,34 @@ yarn dev
 - [x] ♻️ Autoprefixer
 - [x] 🎨 normalize.css
 
+## 项目规范
+
+### 开发
+
+项目已集成 `ESLint`、 `Stylelint` 和 `Prettier` 等工具，建议在 VS Code 中安装对应插件，并启用以下配置：
+
+```json
+// 开启保存自动修复
+"editor.codeActionsOnSave": {
+  "source.fixAll.eslint": true,
+  "source.fixAll.stylelint": true
+},
+
+// 开启 stylelint 对 scss 的支持
+"stylelint.validate": ["css", "scss", "less", "postcss"],
+```
+
+### 提交
+
+项目已集成 `commitlint`、 `Husky` 和 `lint-staged` 等工具，会在 commit 阶段执行 `git hooks` 进行代码校验，需要确保 commit 满足以下要求：
+
+- 提交的所有文件通过 `ESLint`、 `Stylelint` 校验
+- 提交信息需要符合 Conventional Commits 规范
+
+### 打包
+
+在 Vite 的 build 阶段存在 typescript 校验，需要确保项目中代码不存在 ts 错误，如果存在难以解决的 ts 问题，可以临时通过 `// @ts-ignore` 等注释关闭相关校验
+
 ## 说明
 
 - 后续如有针对项目配置优化的需要，可通过提交 PR 至 `react-vite-template` 项目配置后再同步至其他项目。
