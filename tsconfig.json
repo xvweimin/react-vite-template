@@ -17,12 +17,7 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@api": ["./src/api"],
-      "@assets/*": ["./src/assets/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@redux/*": ["./src/redux/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@src/*": ["./src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src"],

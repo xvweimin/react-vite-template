@@ -37,6 +37,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^17.4.4
     version: 17.4.4
+  '@types/node':
+    specifier: ^20.5.9
+    version: 20.5.9
   '@types/react':
     specifier: ^18.0.27
     version: 18.0.27
@@ -105,7 +108,7 @@ devDependencies:
     version: 4.9.3
   vite:
     specifier: ^4.1.0
-    version: 4.1.0(@types/node@20.4.7)(sass@1.58.3)
+    version: 4.1.0(@types/node@20.5.9)(sass@1.58.3)
 
 packages:
 
@@ -237,7 +240,7 @@ packages:
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@20.4.7)(typescript@4.9.3)
+      ts-node: 10.9.1(@types/node@20.5.9)(typescript@4.9.3)
       typescript: 4.9.3
     transitivePeerDependencies:
       - '@swc/core'
@@ -821,6 +824,10 @@ packages:
     resolution: {integrity: sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==}
     dev: true
 
+  /@types/node@20.5.9:
+    resolution: {integrity: sha512-PcGNd//40kHAS3sTlzKB9C9XL4K0sTup8nbG5lC14kzEteTNuAFh9u5nA0o5TWnSG2r/JNPRXFVcHJIIeRlmqQ==}
+    dev: true
+
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
     dev: true
@@ -987,7 +994,7 @@ packages:
       vite: ^4.0.0
     dependencies:
       '@swc/core': 1.3.82
-      vite: 4.1.0(@types/node@20.4.7)(sass@1.58.3)
+      vite: 4.1.0(@types/node@20.5.9)(sass@1.58.3)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -1458,7 +1465,7 @@ packages:
     dependencies:
       '@types/node': 20.4.7
       cosmiconfig: 8.3.4(typescript@4.9.3)
-      ts-node: 10.9.1(@types/node@20.4.7)(typescript@4.9.3)
+      ts-node: 10.9.1(@types/node@20.5.9)(typescript@4.9.3)
       typescript: 4.9.3
     dev: true
 
@@ -4229,7 +4236,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node@10.9.1(@types/node@20.4.7)(typescript@4.9.3):
+  /ts-node@10.9.1(@types/node@20.5.9)(typescript@4.9.3):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -4248,7 +4255,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.4.7
+      '@types/node': 20.5.9
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -4426,7 +4433,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.1.0(@types/node@20.4.7)(sass@1.58.3):
+  /vite@4.1.0(@types/node@20.5.9)(sass@1.58.3):
     resolution: {integrity: sha512-YoUKE/9bbK4C8ZeSYMDDEF8H5aypmWUq4WisftDhntR1gkI2zt2SGT/5Wd2xu6ZoVXkCyO3U4844KWG9e4nFoQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4451,7 +4458,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.4.7
+      '@types/node': 20.5.9
       esbuild: 0.16.17
       postcss: 8.4.29
       resolve: 1.22.4
