@@ -50,7 +50,7 @@
     "vite": "^4.1.0"
   },
   "engines": {
-    "node": ">=14.18 || >=16"
+    "node": ">=16"
   },
   "repository": {
     "type": "git",

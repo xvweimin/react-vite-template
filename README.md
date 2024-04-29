@@ -10,15 +10,15 @@
 
 ## 项目启动
 
-此项目使用 Yarn 作为包管理工具：
+此项目使用 pnpm 8 作为包管理工具：
 
 ```bash
-yarn
+pnpm i
 
-yarn dev
+pnpm run dev
 ```
 
-> 兼容性要求：node 版本 14.18+，16+
+> 兼容性要求：node 版本 16+
 >
 > 推荐使用 [ nvm ](https://github.com/creationix/nvm#installation) (macOS/Linux) 或 [ nvm-windows ](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) 在不同项目之间切换节点版本
 
